@@ -4,10 +4,10 @@ import 'package:flutter/services.dart';
 
 class FlutterPluginVnpt {
   static const MethodChannel _channel =
-      const MethodChannel('flutter_plugin_vnpt');
+      const MethodChannel('flutterPlugin2');
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
+  static Future<String> getDeviceInfo(Map<String, dynamic> value) async {
+    final String info = await _channel.invokeMethod('startActivityNative', value);
+    return info;
   }
 }
