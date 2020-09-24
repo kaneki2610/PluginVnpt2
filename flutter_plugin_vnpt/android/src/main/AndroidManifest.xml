@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.example.flutter_plugin_vnpt">
+    <application android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+    </application>
+</manifest>
